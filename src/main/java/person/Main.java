@@ -35,8 +35,8 @@ public class Main {
 
     public static void main(String[] args) {
         int n = 1000;
-        if(args.length>1){
-            n=Integer.parseInt(args[1]);
+        if(args.length>=1){
+            n=Integer.parseInt(args[0]);
         }
 
         EntityManager em = emf.createEntityManager();
